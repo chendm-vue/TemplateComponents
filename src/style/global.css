@@ -1,0 +1,46 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #bbb;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 0, 0, 0.4);
+}
+
+:root, body, #app {
+  @apply h-full
+}
+
+.SysTabs .el-tabs--card > .el-tabs__header .el-tabs__item {
+  border: 1px solid
+}
+
+.SysTabs .el-tabs__item .el-icon-close:hover {
+  @apply bg-primary
+}
+
+.SysTabs .el-tabs--card > .el-tabs__header {
+  @apply border-b-0
+}
+
+svg {
+  display: inline;
+}
